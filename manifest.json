@@ -2,7 +2,7 @@
   "name": "Daily Planner",
   "short_name": "Planner",
   "description": "Track your success, one day at a time - Bulletproof daily habit tracker",
-  "start_url": "/index.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#fcfcf9",
   "theme_color": "#218186",
