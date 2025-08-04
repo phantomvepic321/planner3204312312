@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Time - Track your success, one day at a time</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiU3VjY2VzcyBUaW1lIiwic2hvcnRfbmFtZSI6IlN1Y2Nlc3MiLCJzdGFydF91cmwiOiIvIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZjZmNmOSIsInRoZW1lX2NvbG9yIjoiIzIxODA4ZCIsImljb25zIjpbeyJzcmMiOiJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSGRwWkhSb1BTSXlOQ0VpSUdobGFXZG9kRDBpTWpRaUlIWnBaWGRDYjNnOUlqQWdNQ0F5TkNBeU5DSStQR1JsWm5NK1BHTnBjbU5zWlNCcFpEMGlZU0lnWTNnOUlqRXlJaUJqZVQwaU1USWlJSEk5SWpVaUx6NDhMMlJsWm5NK1BHTnBjbU5zWlNCbWFXeHNQU0oxY213b0kyRXBJaUJqZUQwaU1USWlJR041UFNJeE1pSWdjajBpTlNJdlBqd3Zablp6UGc9PSIsInNpemVzIjoiMjR4MjQiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XX0="/>
+    <!-- Changed base64 manifest link to file reference to enable install -->
+    <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#21808d">
     <link rel="icon" href="icon-192.png" type="image/png">
 
@@ -91,6 +92,7 @@
         </div>
     </div>
     
+    <!-- Service worker registration script to enable PWA install -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
